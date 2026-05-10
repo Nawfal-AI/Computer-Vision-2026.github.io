@@ -342,7 +342,29 @@
             </div>
           </article>
 
-        
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Cooking action recognition">
+              <img src="assets/group_P.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group P</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Action recognition, video understanding, self-supervised embeddings</p>
+              <h3>From Raw Footage to Recipe: Extracting Cooking Steps from Egocentric Video</h3>
+              <p class="project-abstract">
+                This project builds a system that watches egocentric cooking videos and automatically extracts the sequence of cooking actions performed, with the goal of reconstructing a recipe from raw footage alone.
+                Because most frames in a cooking video are irrelevant, the pipeline first applies a relevance classifier to filter out background activity, then routes the remaining clips through an RNN-based action classifier that identifies steps such as cutting, peeling, and boiling.
+                Video representations are produced by V-JEPA 2, which encodes each video as a sequence of 64-frame block embeddings without requiring labeled pretraining data.
+                The result is an end-to-end pipeline that turns an unstructured kitchen video into a structured, step-by-step recipe.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+
 
           <article class="project-card add-project-card">
             <a href="https://github.com/Computer-Vision-2026/Computer-Vision-2026.github.io/edit/main/index.html" target="_blank" rel="noopener">
