@@ -110,6 +110,30 @@
             </div>
           </article>
 
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="AI image captioning system turning video frames into short action labels.">
+              <img src="assets/group_V.png" alt="Group V image captioning preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group V</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Video understanding, vision-language models, action captioning</p>
+              <h3>Action/Event-Focused Captioning: A Three-Model Comparison</h3>
+              <p class="project-abstract">
+                This project explores how pretrained image-captioning models can be adapted to produce short action-focused captions for video activity timelines. Instead of generating long descriptive captions, we fine-tune BLIP, ViT-GPT2, and Microsoft GIT on COCO action captions so that the models output compact labels such as “person walking” or “coffee being poured.”
+                <br><br>
+                For video inference, frames are sampled over time, captioned by the fine-tuned models, and de-duplicated into a simple activity timeline. The project compares original and fine-tuned models using BLEU-1, BLEU-2, METEOR, and ROUGE-L, and analyzes whether architecture choice still matters after all models are adapted to the same action-caption task.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          
+          
           <article class="project-card">
             <div class="teaser" role="img" aria-label="Two hands playing rock-paper-scissors, but one holds a banana instead of a valid sign, illustrating anomaly detection.">
               <img src="assets/group_J.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
